@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/criar-evento.css">
+    <script src="https://kit.fontawesome.com/918d819df9.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+
+    <title>Cadastrar Evento</title>
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="header_box">
+            <div class="imagem">
+                <img src="images/logo.png" alt="">
+            </div>
+        </div>
+
+        <nav class="header_menu">
+
+            <div class="container_menu_principal">
+                <ul>
+                    <li>
+                        <a class="ahover" id="li_border" href="#">Crie seu evento</a>
+                    </li>
+                    <li>
+                        <a class="ahover" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="ahover" href="#">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a class="ahover" href="meus-eventos.html">Eventos</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="container_menu_secundario">
+                <ul>
+                    <li>
+                        <a class="ahover" href="login.html">Entre</a>
+                    </li>
+                    <span class="span_ou">ou</span>
+                    <li>
+                        <a class="ahover" href="#">Cadastre-se</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main class="cad_even_main">
+        <section class="cad_even_section">
+
+            <div class="cad_container_color">
+                <div class="circle_cad top"></div>
+                <div class="circle_cad bottom"></div>
+            </div>
+            <div class="cad_container_form">
+                <div class="titulo_cad_evento">
+                    <h1>Cadastrar novo evento</h1>
+                </div>
+                <form class="cad_form" action="">
+                    <div class="campo_dados">
+                        <div>
+                        <label for="nome">Nome:</label>
+                        <input class="cad_nome_usu" type="text" name="" id="nome" placeholder="Digite o nome do evento...">
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input class="cad_email" type="text" name="" id="email" placeholder="Email de contato com o responsável pelo evento">
+                        </div>
+
+                    </div>
+                    <!-- <div class="campo_dados">
+                        <div>
+                            <small>Se já tiver um link de inscrição, insira aqui, se não tiver você pode incluir depois
+                                do evento ser aprovado também.</small>
+                            <input class="cad_url" type="text" name="" id="" placeholder="URL para cadastro">
+                        </div>
+
+
+                    </div> -->
+                    <div class="campo_dados">
+                        <div>
+                        <label for="cad-participantes">Quantidade de participantes:</label>
+                        <select class="select_quant" name="participantes" id="cad-participantes">
+                            <option value="25">Até 25 pessoas</option>
+                            <option value="60">De 25 a 60 pessoas</option>
+                        </select>
+                        </div>
+        
+                        <div>
+                            <label for="categorias">Selecione a categoria do evento:</label>
+                            <select class="select_cat" name="categorias" id="categorias">
+                                <option value="edu">Educação</option>
+                                <option value="tec">Tecnologia</option>
+                                <option value="sau">Saúde</option>
+                                <option value="prof">Profissões</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="campo_dados">
+                        <div>
+                            <label for="">O evento terá coffe?</label>
+                            <select class="select_coffe" name="coffe" id="cad-coffe">
+                                <option value="sel">Selecione</option>
+                                <option value="Sim">Sim</option>
+                                <option value="Não">Não</option>
+                            </select>
+                        </div>
+
+                        <!-- <div class="cad-box-cat"> -->
+                        <!-- <label class="cad-label-cat" for="categorias">Categorias</label> -->
+                        <div>
+                            <label for="">Evento focado em diversidade?</label>
+                            <select class="select_diversi" name="diversidade" id="cad-diversidada">
+                                <option value="sel">Selecione</option>
+                                <option value="Sim">Sim</option>
+                                <option value="Não">Não</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="campo_dados">
+                        <div>
+                            <label class="cad-label-date" for="select-data">Data:</label>
+                            <input class="cad-select-data" type="date" name="" id="">
+                        </div>
+
+                        <div>
+                            <label class="cad-label-hora" for="appt">Selecione o horário do evento:</label>
+                            <input class="cad-select-hora" type="time" id="" name="appt" min="19:00" max="22:00"
+                                required>
+                            <!-- <small class="cad-small">O horário disponível para eventos de segunda a sexta é das 19:00 ás
+                        22:00 e aos sábados das 10:00 ás 19:00 </small> -->
+                        </div>
+
+                    </div>
+
+                    <div class="campo_dados">
+                        <div>
+
+                            <label class="imagem-evento">Insira uma Imagem de capa para seu evento:</label>
+                            <input class="cad_select_img" type="file" name="pic" accept="image/*">
+
+                        </div>
+                        <div>
+                            <label for="">Evento privado?</label>
+                            <select class="select_diversi" name="diversidade" id="cad-diversidada">
+                                <option value="sel">Selecione</option>
+                                <option value="Sim">Sim</option>
+                                <option value="Não">Não</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="campo_dados">
+                            <div>
+                                    <label class="cad-label-descricao">Faça uma breve descrição sobre o evento:</label>
+                                    <textarea class="cad-textarea" name="descricao-evento" id="desc-eve" cols="45" rows="10"
+                                        ></textarea>
+                            </div>
+                        <div class="div_small_url">
+                            <div>
+                            <label for="url_cad">Url de cadastro:</label>
+                            </div>
+                            <input class="cad_input_url" type="text" name="" id="url_cad" placeholder="URL para cadastro">
+                            <small class="small_url">Se já tiver um link de inscrição, insira aqui. Se não tiver, você pode incluir depois
+                                que evento for aprovado também.</small>
+
+                        </div>
+                    </div>
+                    <div class="campo_dados">
+                        
+                        <div class="div_botao">
+                                <button class="cad-btn-cadastrar-evento">Cadastrar</button>
+                        </div>
+                    </div>
+                    
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
